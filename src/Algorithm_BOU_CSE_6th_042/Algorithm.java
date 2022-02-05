@@ -36,7 +36,7 @@ public class Algorithm{
              +"17. Fibonacci Numbers\n"
              +"18. Euclidean GCD Algorithm\n"
              +"19. Univsersal Hashing\n");
-       System.out.println();
+       System.out.println("\n");
        System.out.println("Enter Your DataStructure choice: ");
        int n1=s.nextInt();
 
