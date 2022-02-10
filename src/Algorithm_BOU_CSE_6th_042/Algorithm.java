@@ -82,7 +82,9 @@ public class Algorithm{
                        System.out.println("Sorry This code is in note created yet!!!");
                        break;
                    case 14:
-                       System.out.println("Sorry This code is in note created yet!!!");
+                       Linked lk=new Linked();
+                       lk.linked_display();
+                       
                        break;
                    case 15:
                        System.out.println("Sorry This code is in note created yet!!!");
