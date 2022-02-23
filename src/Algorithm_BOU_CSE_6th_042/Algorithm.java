@@ -4,7 +4,9 @@ import  java.util.Scanner;
 public class Algorithm{
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
+        
         while(true){
+            System.out.println();
             System.out.println("-----------------------------\n"
                               +"   ***Computer Algorithm***  \n"
                               +"-----------------------------\n"
@@ -34,8 +36,8 @@ public class Algorithm{
              +"15. Heap Sort\n"
              +"16. Binary Search Tree\n"
              +"17. Fibonacci Numbers\n"
-             +"18. Euclidean GCD Algorithm\n"
-             +"19. Univsersal Hashing\n");
+             +"18. Euclidean GCD & LCM Algorithm\n"
+             +"19. Univsersal Hashing");
        System.out.println("\n");
        System.out.println("Enter Your DataStructure choice: ");
        int n1=s.nextInt();
@@ -49,13 +51,22 @@ public class Algorithm{
                        break;
                 
                    case 3:
-                       System.out.println("Sorry This code is in note created yet!!!");
-                       break;
+                       BubbleSort b=new BubbleSort();
+                       Input in=new Input();
+                       System.out.println("choose what to display:\n1. Sorting\n2. Sorting with Each Pass and Steps");
+                       int op3=s.nextInt();
+                       if(op3==1)
+                            b.bubble_sort(in.sort_input());
+                       else
+                           b.bubble_sort2(in.sort_input()); 
+                           break;
                    case 4:
                        System.out.println("Sorry This code is in note created yet!!!");
                        break;
                    case 5:
-                       System.out.println("Sorry This code is in note created yet!!!");
+                       SelectionSort ss=new SelectionSort();
+                       Input in5=new Input();
+                       ss.selection_sort(in5.sort_input());
                        break;
                    case 6:
                        System.out.println("Sorry This code is in note created yet!!!");
@@ -93,12 +104,18 @@ public class Algorithm{
                        System.out.println("Sorry This code is in note created yet!!!");
                        break;
                    case 17:
-                       System.out.println("Sorry This code is in note created yet!!!");
+                       Fibonacci fib=new Fibonacci();
                        break;
                    case 18:
                        System.out.println("Sorry This code is in note created yet!!!");
                        break;
                    case 19:
+                       System.out.print("Choose One option: \n1. GCD\n2. LCM");
+                       int c19=s.nextInt();
+                       Euclid_GCD_LCM e=new Euclid_GCD_LCM();
+                       if(c19==1){
+                           e.gcd();
+                       }
                        System.out.println("Sorry This code is in note created yet!!!");
                        break;
                    default:
