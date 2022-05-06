@@ -1,5 +1,5 @@
 
-package Algorithm_BOU_CSE_6th_042;
+package DataStructure;
 public class BubbleSort {
     public void bubble_sort(int arr[]){
         int n=arr.length;

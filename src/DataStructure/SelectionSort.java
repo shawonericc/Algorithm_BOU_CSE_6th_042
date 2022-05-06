@@ -1,5 +1,5 @@
 
-package Algorithm_BOU_CSE_6th_042;
+package DataStructure;
 class SelectionSort {
     void selection_sort(int arr[]){
         int n=arr.length;

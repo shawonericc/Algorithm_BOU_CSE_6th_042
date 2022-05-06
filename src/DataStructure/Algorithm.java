@@ -1,5 +1,7 @@
 
-package Algorithm_BOU_CSE_6th_042;
+package DataStructure;
+import GraphAlgorithms.GraphRepresent;
+//import GraphAlgorithms.*;
 import  java.util.Scanner;
 public class Algorithm{
     public static void main(String[] args) {
@@ -11,7 +13,7 @@ public class Algorithm{
                               +"   ***Computer Algorithm***  \n"
                               +"-----------------------------\n"
                               +"1. Data Structure\n"
-                              +"2. Algorithm");
+                              +"2. Graph Algorithm");
             
          System.out.println("Type your choise: ");
          int choice=s.nextInt();
@@ -37,7 +39,9 @@ public class Algorithm{
              +"16. Binary Search Tree\n"
              +"17. Fibonacci Numbers\n"
              +"18. Euclidean GCD & LCM Algorithm\n"
-             +"19. Univsersal Hashing");
+             +"19. Univsersal Hashing\n"
+             +"20. Naive String Matching\n"
+             +"21. Matrix Chain Multiplication");
        System.out.println("\n");
        System.out.println("Enter Your DataStructure choice: ");
        int n1=s.nextInt();
@@ -69,16 +73,22 @@ public class Algorithm{
                        ss.selection_sort(in5.sort_input());
                        break;
                    case 6:
-                       System.out.println("Sorry This code is in note created yet!!!");
+                       MergeSort ms=new MergeSort();
+                       Input in6=new Input();
+                       ms.merge_sort(in6.sort_input()); //we can not use Constructor here, cause we need input first. 
                        break;
                    case 7:
-                       System.out.println("Sorry This code is in note created yet!!!");
+                       QuickSort qs=new QuickSort();
+                       Input in7=new Input();
+                       qs.quick_sort(in7.sort_input()); //we can not use Constructor here, cause we need input first. 
                        break;
                    case 8:
                        System.out.println("Sorry This code is in note created yet!!!");
                        break;
                    case 9:
-                       System.out.println("Sorry This code is in note created yet!!!");
+                       RadixSort rs=new RadixSort();
+                       Input in9=new Input();
+                       rs.radix_sort(in9.sort_input()); //we can not use Constructor here, cause we need input first. 
                        break;
                    case 10:
                        System.out.println("Sorry This code is in note created yet!!!");
@@ -117,6 +127,12 @@ public class Algorithm{
                            e.gcd();
                        }
                        System.out.println("Sorry This code is in note created yet!!!");
+                       break;
+                   case 20:
+                       NaiveStringMatching nsm=new NaiveStringMatching();
+                       break;
+                   case 21:
+                       MatrixChainMultiplication mcm=new MatrixChainMultiplication();
                        break;
                    default:
                        System.out.println("Invalid choice");

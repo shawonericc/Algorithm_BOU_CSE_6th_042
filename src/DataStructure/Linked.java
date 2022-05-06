@@ -1,5 +1,5 @@
 
-package Algorithm_BOU_CSE_6th_042;
+package DataStructure;
 import java.util.LinkedList;
 import java.util.Scanner;
 public class Linked {

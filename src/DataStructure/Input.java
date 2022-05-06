@@ -1,17 +1,17 @@
 
-package Algorithm_BOU_CSE_6th_042;
+package DataStructure;
 
 import java.util.Scanner;
 
 public class Input {
     int num,i,j;
     Scanner input=new Scanner(System.in);
- //public int sort(){}  ekta value pass korar jonno..
-    //array er jonno  public int[] sort(){}
+
+//=====>>>>>> For taking one value only: (unused)
     public int sort(){
         return 0;
     }
-    
+ //====>>>>>> Taking input for full array for Sorting:  
     public int[] sort_input(){
         System.out.println("Enter the number of integer to sort: ");
         num= input.nextInt();
@@ -23,9 +23,9 @@ public class Input {
         }
         return arr; 
     }
-    
+//=====>>>> Taking input for Search or Matching (unused): 
     public int single_input(){
-        
+        System.out.println("Your");
         return 0;
     }
 }
