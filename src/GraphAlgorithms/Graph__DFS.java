@@ -9,12 +9,15 @@ package GraphAlgorithms;
 
 import java.util.*;
 
-class Graph {
+import java.util.Iterator;
+import java.util.LinkedList;
+
+class Graph__DFS {
     private LinkedList<Integer> adjLists[];
     private boolean visited[];
 
     // Graph creation
-    Graph(int vertices) {
+    Graph__DFS(int vertices) {
         adjLists = new LinkedList[vertices];
         visited = new boolean[vertices];
 
@@ -40,8 +43,8 @@ class Graph {
         }
     }
 
-    public static void main(String args[]) {
-        Graph g = new Graph(4);
+    public static void main(String[] args) {
+        Graph__DFS g = new Graph__DFS(4);
 
         g.addEdge(0, 1);
         g.addEdge(0, 2);
